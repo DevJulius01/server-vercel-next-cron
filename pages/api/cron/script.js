@@ -2,7 +2,7 @@ import axios from 'axios';
 const { ACCESS_KEY } = process.env
 
 export default function script(req, res) {
-    axios.get(`https://localhost:3000/exec?access=${ACCESS_KEY}`).then((result) => {
+    axios.get(`/api?access=${ACCESS_KEY}`).then((result) => {
 
         console.log(result);
     }).catch((err) => {

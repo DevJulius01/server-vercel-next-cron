@@ -1,7 +1,7 @@
 const { ACCESS_KEY } = process.env
 
 export default function script(req, res) {
-    fetch('https://server-vercel-next-cron.vercel.app/api?success=1234')
+    fetch('https://server-vercel-next-cron.vercel.app/api?success=1234').then(res => res.body)
         .then(data => { console.log(data) })
         .catch(
             (err) => {

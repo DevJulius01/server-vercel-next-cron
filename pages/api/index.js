@@ -4,6 +4,8 @@ export default function handler(req, res) {
     const acceso = req.query.access; // Obtener el valor del parámetro "acceso"
 
     // Verificar la seguridad con la llave de acceso
+    console.log(acceso)
+    console.log(ACCESS_KEY)
     if (acceso === ACCESS_KEY) {
         //script()
         console.log("did it!")

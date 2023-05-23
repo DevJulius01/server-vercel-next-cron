@@ -1,4 +1,4 @@
-const axios = require('axios/dist/node/axios.cjs');
+import axios from 'axios';
 const { ACCESS_KEY } = process.env
 
 export default function script(req, res) {

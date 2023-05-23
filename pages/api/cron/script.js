@@ -8,4 +8,5 @@ export default function script(req, res) {
                 console.log(err.message)
             }
         )
+
 }
